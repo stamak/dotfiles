@@ -57,7 +57,7 @@ set nobackup            " no *~ backup files
 set nowritebackup
 set noswapfile
 
-set number      " Line numbering is on
+" set number      " Line numbering is on
 set autoindent  " auto indentation
 set smartindent " Use smart indendation if there is no indent file
 set copyindent  " copy the previous indentation on autoindenting
