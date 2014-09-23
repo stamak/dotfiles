@@ -18,4 +18,11 @@ if [ -d ~/.dotfiles ]; then
         link_file $file 
     done 
     popd
+else
+    git clone https://github.com/stamak/dotfiles.git ~/.dotfiles
+    pushd ~/.dotfiles/
+    for file in .[a-zA-Z]*; do
+        link_file $file
+    done
+    popd
 fi
