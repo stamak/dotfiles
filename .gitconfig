@@ -3,11 +3,14 @@
   email = smakar@mirantis.com
 [merge]
   tool = vimdiff
+[push]
+	default = matching
 [gitreview]
   username = smakar
 [alias]
   st = status
   ci = commit --verbose
+  cim = commit -a -m 
   co = checkout
   di = diff
   dc = diff --cached
