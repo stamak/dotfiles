@@ -1,5 +1,5 @@
 [user]
-	name = Stas Makar
+	name = Stanislav Makar
   email = smakar@mirantis.com
 [merge]
   tool = vimdiff
@@ -9,10 +9,13 @@
   username = smakar
 [alias]
   st = status
-  ci = commit --verbose
+  ci = commit --verbose -a
+  ciam = commit --verbose -a --amend
   cim = commit -a -m 
   co = checkout
   di = diff
   dc = diff --cached
   aa = add --all
 
+[core]
+	editor = vim
