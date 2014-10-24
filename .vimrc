@@ -26,6 +26,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'msanders/snipmate.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'Rykka/riv.vim'
+Bundle 'rykka/clickable.vim'
 call vundle#end()
 
 filetype plugin on      " enable filetype-specific indenting
