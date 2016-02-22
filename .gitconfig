@@ -13,6 +13,7 @@
   ciam = commit --verbose -a --amend
   cim = commit -a -m 
   co = checkout
+  cob = checkout -b
   di = diff
   dc = diff --cached
   aa = add --all
