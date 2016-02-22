@@ -25,6 +25,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 Bundle 'msanders/snipmate.vim'
 Bundle 'rodjek/vim-puppet'
+Bundle 'saltstack/salt-vim'
 Bundle 'Rykka/riv.vim'
 Bundle 'rykka/clickable.vim'
 call vundle#end()
