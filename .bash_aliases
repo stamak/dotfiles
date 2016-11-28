@@ -8,3 +8,4 @@ alias ll='ls -lhA'
 alias grep='grep --color=auto'
 alias vimnp='vim -u NORC'
 alias sshws='ssh smakar@myws'
+alias tmux="tmux -2"

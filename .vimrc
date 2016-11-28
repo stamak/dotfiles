@@ -45,6 +45,9 @@ if has("gui_running")   " GUI colors and font settings
     set background=dark
     colorscheme solarized
     set guioptions-=r   " Removing right scroll bar
+else
+    set t_Co=256                        " force vim to use 256 colors
+    let g:solarized_termcolors=256      " use solarized 256 fallback
 endif
 
 set clipboard+=unnamed  " yank to the system register (*) by default
@@ -75,10 +78,9 @@ set shiftwidth=2
 set modeline      " Save tab specific settings to file /* ex: set tabstop=8 expandtab: */
 
 " Language Settings
-set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
-set spelllang=ru_yo,en_us
+set spelllang=en_us
 highlight lCursor guifg=NONE guibg=Blue
 
 " ENCODING SETTINGS
