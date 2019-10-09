@@ -11,3 +11,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Fix SSH auth socket location so agent forwarding works with tmux
 [[ $SSH_AUTH_SOCK ]] && [[ ! $TMUX ]] && ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+
+source <(kubectl completion bash)
