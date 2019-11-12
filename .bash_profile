@@ -23,4 +23,8 @@ if [[ -e /usr/share/bash-completion/completions/git ]]; then
   source /usr/share/bash-completion/completions/git
 fi
 
+if [[ -e /usr/local/etc/bash_completion.d/git-completion.bash ]]; then
+  source /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
 source <(kubectl completion bash)
