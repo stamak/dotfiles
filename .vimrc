@@ -19,15 +19,13 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise'
 Bundle 'bling/vim-airline'
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 Bundle 'msanders/snipmate.vim'
-Bundle 'rodjek/vim-puppet'
-Bundle 'saltstack/salt-vim'
-Bundle 'Rykka/riv.vim'
-Bundle 'rykka/clickable.vim'
+Plugin 'zxqfl/tabnine-vim'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Rykka/riv.vim'
 call vundle#end()
 
 filetype plugin on      " enable filetype-specific indenting
@@ -121,4 +119,17 @@ function! AppendModeline()
 endfunction
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
-set nofoldenable
+"set nofoldenable
+"let python_highlight_all = 1
+"let g:ycm_min_num_of_chars_for_completion = 1
+"let g:ycm_add_preview_to_completeopt = 1
+"let g:ycm_autoclose_preview_window_after_insertion = 1
+"let g:ycm_autoclose_preview_window_after_completion = 1
+"let g:ycm_key_invoke_completion = '<Tab>'
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" add yaml stuffs
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent nofoldenable
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd FileType python setlocal ts=4 sts=4 sw=4 tw=120 expandtab fileformat=unix
