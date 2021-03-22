@@ -14,5 +14,3 @@ curl -L https://github.com/stamak/dotfiles/raw/master/dot_install.sh | /bin/bash
 
 P.S.
 https://github.com/holser/dotfiles has been taken as a base
-
-
