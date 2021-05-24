@@ -7,6 +7,7 @@ export HISTCONTROL=ignoreboth
 
 # Add home bin to PATH
 [[ -d "$HOME/bin" ]] && export PATH="$PATH:$HOME/bin" # Add home bin
+[[ -d "$HOME/bin/google-cloud-sdk/bin/" ]] && export PATH="$PATH:$HOME/bin/google-cloud-sdk/bin" # Add home bin
 
 # Load RVM into a shell session *as a function*
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

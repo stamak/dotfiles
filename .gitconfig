@@ -1,6 +1,6 @@
 [user]
 	name = Stanislav Makar
-  email = stas.makar@gmail.com
+	email = stas.makar@gmail.com
 [merge]
   tool = vimdiff
 [push]

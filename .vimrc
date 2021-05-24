@@ -24,6 +24,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 Bundle 'msanders/snipmate.vim'
 Plugin 'zxqfl/tabnine-vim'
+Plugin 'hashivim/vim-terraform'
+Plugin 'leafgarland/typescript-vim'
 "Bundle 'Valloric/YouCompleteMe'
 "Bundle 'Rykka/riv.vim'
 call vundle#end()
