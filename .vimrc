@@ -38,6 +38,7 @@ filetype on             " enable filetype detection
 
 set history=100         " keep 100 lines of last commands in history
 set autoread            " automatically read a file that is changed from outside
+set background=dark     " better comments visibility
 syntax on               " syntax highlight
 
 if has("gui_running")   " GUI colors and font settings
