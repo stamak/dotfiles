@@ -30,3 +30,4 @@ if [[ -e /usr/share/bash-completion/completions/git ]]; then
 fi
 
 source <(kubectl completion bash)
+source <(helm completion bash)
