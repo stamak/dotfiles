@@ -31,3 +31,5 @@ fi
 
 source <(kubectl completion bash)
 source <(helm completion bash)
+
+[[ -d "/opt/homebrew/bin" ]] && export PATH="/opt/homebrew/bin:$PATH" # Add homebrew bin
