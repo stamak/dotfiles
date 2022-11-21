@@ -29,6 +29,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         [[ -r "${COMPLETION}" ]] && source "${COMPLETION}"
       done
     fi
+    # Get list of gnubin directories
+    GNUBINS="$(find ${HOMEBREW_PREFIX}/opt -type d -follow -name gnubin -print)";
+    for bindir in ${GNUBINS[@]}; do
+      export PATH=$bindir:$PATH;
+    done;
   fi
   else
     # Linux bash completion
